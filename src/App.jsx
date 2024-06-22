@@ -1,6 +1,6 @@
 import Header from "./components/Header"
 import logo from "./assets/logo.png"
-import Main from "./components/Main"
+import Home from "./components/Home"
 
 
 export default function App() {
@@ -9,7 +9,7 @@ export default function App() {
     <Header>
       <img src={logo} alt="logo image" />
     </Header>
-    <Main />
+    <Home />
     </div>
   )
 }
