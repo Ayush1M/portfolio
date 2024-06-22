@@ -5,7 +5,7 @@ import Home from "./components/Home"
 
 export default function App() {
   return (
-    <div>
+    <div className="font-inconsolata">
     <Header>
       <img src={logo} alt="logo image" />
     </Header>
