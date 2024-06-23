@@ -14,6 +14,7 @@ import { BiLogoGithub } from "react-icons/bi";
 import { BiLogoFigma } from "react-icons/bi";
 import { BiLogoVisualStudio } from "react-icons/bi";
 import { BiLogoFirebase } from "react-icons/bi";
+import project1 from "../images/project-1.png"
 
 
 const Home = () => {
@@ -51,6 +52,28 @@ const Home = () => {
                 <p className="text-xl flex flex-col items-center"><BiLogoFigma className="mb-4 text-5xl"/>Figma</p>
                 <p className="text-xl flex flex-col items-center"><BiLogoVisualStudio className="mb-4 text-5xl"/>VSCode</p>
                 <p className="text-xl flex flex-col items-center"><BiLogoFirebase className="mb-4 text-5xl"/>Firebase</p> 
+            </div>
+        </section>
+
+
+        <section className="mt-40">
+            <h2 className="text-center text-5xl mb-40">My Projects</h2>
+            <div className="grid grid-cols-3 gap-8 place-items-center">
+                <div>
+                    <img src={project1} alt="" className="w-96 h-96 object-cover rounded-3xl" />
+                    <div className="flex justify-between mt-2">
+                    <h2 className="text-2xl mb-2">Todo App</h2>
+                    <div className="flex mb-4">
+                        <p className="text-4xl"><BiLogoReact/></p>
+                        <p className="text-4xl"><BiLogoTypescript/></p>
+                        <p className="text-4xl"><BiLogoTailwindCss/></p>    
+                    </div>
+                    </div>
+                    <div>
+                        <a href="" className="bg-primary-color px-4 py-2 text-xl text-secondary-color rounded-lg mr-2 hover:bg-secondary-color hover:text-primary-color hover:border-2 hover:border-primary-color">Live</a>
+                        <a href="" className="bg-primary-color px-4 py-2 text-xl text-secondary-color rounded-lg hover:bg-secondary-color hover:text-primary-color hover:border-2 hover:border-primary-color">Repo</a>
+                    </div>
+                </div>
             </div>
         </section>
         </>
