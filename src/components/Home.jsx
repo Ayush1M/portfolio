@@ -33,7 +33,7 @@ const Home = () => {
                 <MdEmail className="p-2 rounded-full border-2 border-primary-color bg-primary-color text-secondary-color hover:text-primary-color hover:bg-secondary-color cursor-pointer"/>
             </div>
             </div>
-            <img src={myImage} alt="my image" className="w-72 rounded-full"/>
+            <img src={myImage} alt="my image" className="w-72 rounded-full border-2 border-primary-color shadow-lg shadow-primary-color"/>
             </div>
         </section>
 
@@ -57,10 +57,10 @@ const Home = () => {
 
 
         <section className="mt-40">
-            <h2 className="text-center text-5xl mb-40">My Projects</h2>
+            <h2 className="text-center text-5xl mb-32">My Projects</h2>
             <div className="grid grid-cols-3 gap-8 place-items-center">
                 <div>
-                    <img src={project1} alt="" className="w-96 h-96 object-cover rounded-3xl" />
+                    <img src={project1} alt="" className="w-96 h-96 object-cover rounded-3xl hover:shadow-lg hover:shadow-primary-color" />
                     <div className="flex justify-between mt-2">
                     <h2 className="text-2xl mb-2">Todo App</h2>
                     <div className="flex mb-4">
