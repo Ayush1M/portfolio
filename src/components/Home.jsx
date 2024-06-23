@@ -15,6 +15,8 @@ import { BiLogoFigma } from "react-icons/bi";
 import { BiLogoVisualStudio } from "react-icons/bi";
 import { BiLogoFirebase } from "react-icons/bi";
 import project1 from "../images/project-1.png"
+import project2 from "../images/project-2.png"
+import project3 from "../images/project-3.png"
 
 
 const Home = () => {
@@ -40,18 +42,18 @@ const Home = () => {
         <section className="mt-40 flex flex-col items-center">
             <h2 className="mb-16 text-5xl">My Skills</h2>
             <div className="flex flex-wrap gap-10">
-                <p className="text-xl flex flex-col items-center"><BiLogoHtml5 className="mb-4 text-5xl"/>HTML</p>
-                <p className="text-xl flex flex-col items-center"><BiLogoCss3 className="mb-4 text-5xl"/>CSS</p>
-                <p className="text-xl flex flex-col items-center"><BiLogoJavascript className="mb-4 text-5xl"/>JavaScript</p>
-                <p className="text-xl flex flex-col items-center"><BiLogoTypescript className="mb-4 text-5xl"/>TypeScript</p>
-                <p className="text-xl flex flex-col items-center"><BiLogoReact className="mb-4 text-5xl"/>React</p>
-                <p className="text-xl flex flex-col items-center"><BiLogoTailwindCss className="mb-4 text-5xl"/>Tailwind CSS</p>
-                <p className="text-xl flex flex-col items-center"><TbApi className="mb-4 text-5xl"/>Api</p>
-                <p className="text-xl flex flex-col items-center"><BiLogoGit className="mb-4 text-5xl"/>Git</p>
-                <p className="text-xl flex flex-col items-center"><BiLogoGithub className="mb-4 text-5xl"/>Github</p>
-                <p className="text-xl flex flex-col items-center"><BiLogoFigma className="mb-4 text-5xl"/>Figma</p>
-                <p className="text-xl flex flex-col items-center"><BiLogoVisualStudio className="mb-4 text-5xl"/>VSCode</p>
-                <p className="text-xl flex flex-col items-center"><BiLogoFirebase className="mb-4 text-5xl"/>Firebase</p> 
+                <p className="text-xl flex flex-col items-center"><BiLogoHtml5 className="mb-4 text-6xl"/>HTML</p>
+                <p className="text-xl flex flex-col items-center"><BiLogoCss3 className="mb-4 text-6xl"/>CSS</p>
+                <p className="text-xl flex flex-col items-center"><BiLogoJavascript className="mb-4 text-6xl"/>JavaScript</p>
+                <p className="text-xl flex flex-col items-center"><BiLogoTypescript className="mb-4 text-6xl"/>TypeScript</p>
+                <p className="text-xl flex flex-col items-center"><BiLogoReact className="mb-4 text-6xl"/>React</p>
+                <p className="text-xl flex flex-col items-center"><BiLogoTailwindCss className="mb-4 text-6xl"/>Tailwind CSS</p>
+                <p className="text-xl flex flex-col items-center"><TbApi className="mb-4 text-6xl"/>Api</p>
+                <p className="text-xl flex flex-col items-center"><BiLogoGit className="mb-4 text-6xl"/>Git</p>
+                <p className="text-xl flex flex-col items-center"><BiLogoGithub className="mb-4 text-6xl"/>Github</p>
+                <p className="text-xl flex flex-col items-center"><BiLogoFigma className="mb-4 text-6xl"/>Figma</p>
+                <p className="text-xl flex flex-col items-center"><BiLogoVisualStudio className="mb-4 text-6xl"/>VSCode</p>
+                <p className="text-xl flex flex-col items-center"><BiLogoFirebase className="mb-4 text-6xl"/>Firebase</p> 
             </div>
         </section>
 
@@ -60,13 +62,44 @@ const Home = () => {
             <h2 className="text-center text-5xl mb-32">My Projects</h2>
             <div className="grid grid-cols-3 gap-8 place-items-center">
                 <div>
-                    <img src={project1} alt="" className="w-96 h-96 object-cover rounded-3xl hover:shadow-lg hover:shadow-primary-color" />
+                    <img src={project1} alt="todo app" className="w-96 h-96 object-cover rounded-3xl hover:shadow-lg hover:shadow-primary-color" />
                     <div className="flex justify-between mt-2">
-                    <h2 className="text-2xl mb-2">Todo App</h2>
+                    <h2 className="text-2xl mb-2 tracking-tight">Todo App</h2>
                     <div className="flex mb-4">
                         <p className="text-4xl"><BiLogoReact/></p>
                         <p className="text-4xl"><BiLogoTypescript/></p>
                         <p className="text-4xl"><BiLogoTailwindCss/></p>    
+                    </div>
+                    </div>
+                    <div>
+                        <a href="" className="bg-primary-color px-4 py-2 text-xl text-secondary-color rounded-lg mr-2 hover:bg-secondary-color hover:text-primary-color hover:border-2 hover:border-primary-color">Live</a>
+                        <a href="" className="bg-primary-color px-4 py-2 text-xl text-secondary-color rounded-lg hover:bg-secondary-color hover:text-primary-color hover:border-2 hover:border-primary-color">Repo</a>
+                    </div>
+                </div>
+
+                <div>
+                    <img src={project2} alt="tic tac toe game" className="w-96 h-96 object-cover rounded-3xl hover:shadow-lg hover:shadow-primary-color" />
+                    <div className="flex justify-between mt-2">
+                    <h2 className="text-2xl mb-2 tracking-tighter">Tic Tac Toe Game</h2>
+                    <div className="flex mb-4">
+                        <p className="text-4xl"><BiLogoReact/></p>
+                        <p className="text-4xl"><BiLogoTypescript/></p>
+                        <p className="text-4xl"><BiLogoTailwindCss/></p>    
+                    </div>
+                    </div>
+                    <div>
+                        <a href="" className="bg-primary-color px-4 py-2 text-xl text-secondary-color rounded-lg mr-2 hover:bg-secondary-color hover:text-primary-color hover:border-2 hover:border-primary-color">Live</a>
+                        <a href="" className="bg-primary-color px-4 py-2 text-xl text-secondary-color rounded-lg hover:bg-secondary-color hover:text-primary-color hover:border-2 hover:border-primary-color">Repo</a>
+                    </div>
+                </div>
+
+                <div>
+                    <img src={project3} alt="quizzical" className="w-96 h-96 object-cover rounded-3xl hover:shadow-lg hover:shadow-primary-color" />
+                    <div className="flex justify-between mt-2">
+                    <h2 className="text-2xl mb-2 tracking-tight">Quizzical</h2>
+                    <div className="flex mb-4">
+                        <p className="text-4xl"><BiLogoReact/></p>
+                        <p className="text-4xl"><BiLogoCss3/></p>    
                     </div>
                     </div>
                     <div>
