@@ -70,26 +70,32 @@ const Home = () => {
             <div className="grid grid-cols-3 gap-8 place-items-center">
                 <div>
                     <div className="relative group rounded-3xl">
-                    <img src={project1} alt="todo app" className="w-80 h-80 object-cover rounded-3xl cursor-pointer"
+                    <img src={project1} alt="todo app" className="w-80 h-80 object-cover rounded-3xl cursor-pointer hover:shadow-lg hover:shadow-primary-color"
                     onClick={HandleClick} 
                     />
                     {show && (
-                     <div className="absolute inset-0 flex items-center justify-center w-full h-full bg-primary-color text-secondary-color rounded-3xl cursor-pointer" onClick={HandleClick}>
+                     <div className="absolute inset-0 flex flex-col items-center justify-center w-full h-full bg-primary-color text-secondary-color rounded-3xl cursor-pointer" onClick={HandleClick}>
+                        <h2 className="text-2xl mb-2 tracking-tighter">Todo App</h2>
                         <p className="p-2">A Todo App consist of adding and deleting a todo, filtering todo in active or completed and dark/light mode.</p>
+                        <div className="flex">
+                        <p className="text-4xl"><BiLogoReact/></p>
+                        <p className="text-4xl"><BiLogoTypescript/></p>
+                        <p className="text-4xl"><BiLogoTailwindCss/></p>    
+                    </div>
                     </div>)} 
                     </div>
-                    <div className="flex justify-between mt-2">
-                    <h2 className="text-2xl mb-2 tracking-tighter">Todo App</h2>
-                    <div className="flex mb-4">
+                    <div className="flex justify-between items-center mt-6">
+                    <div>
+                        <a href="" className="bg-primary-color px-4 py-2 text-xl text-secondary-color rounded-lg mr-2 hover:bg-secondary-color hover:text-primary-color hover:border-2 hover:border-primary-color">Live</a>
+                        <a href="" className="bg-primary-color px-4 py-2 text-xl text-secondary-color rounded-lg hover:bg-secondary-color hover:text-primary-color hover:border-2 hover:border-primary-color">Repo</a>
+                    </div>
+                    <div className="flex">
                         <p className="text-4xl"><BiLogoReact/></p>
                         <p className="text-4xl"><BiLogoTypescript/></p>
                         <p className="text-4xl"><BiLogoTailwindCss/></p>    
                     </div>
                     </div>
-                    <div>
-                        <a href="" className="bg-primary-color px-4 py-2 text-xl text-secondary-color rounded-lg mr-2 hover:bg-secondary-color hover:text-primary-color hover:border-2 hover:border-primary-color">Live</a>
-                        <a href="" className="bg-primary-color px-4 py-2 text-xl text-secondary-color rounded-lg hover:bg-secondary-color hover:text-primary-color hover:border-2 hover:border-primary-color">Repo</a>
-                    </div>
+                    
                 </div>
 
                 <div>
