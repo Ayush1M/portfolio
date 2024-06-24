@@ -235,37 +235,64 @@ const Home = () => {
           </div>
 
           <div>
-            <img
-              src={project3}
-              alt="quizzical"
-              className="w-80 h-80 object-cover rounded-3xl hover:shadow-lg hover:shadow-primary-color"
-            />
-            <div className="flex justify-between mt-2">
-              <h2 className="text-2xl mb-2 tracking-tighter">Quizzical</h2>
-              <div className="flex mb-4">
+            <div className="relative group rounded-3xl">
+              <img
+                src={project3}
+                alt="tic tac toe game"
+                className="w-80 h-80 object-cover rounded-3xl cursor-pointer hover:shadow-lg hover:shadow-primary-color"
+                onClick={() => HandleClick("image3")}
+              />
+              {show === "image3" && (
+                <div
+                  className="absolute inset-0 flex flex-col items-center justify-center w-full h-full bg-primary-color text-secondary-color rounded-3xl cursor-pointer"
+                  onClick={HandleClick}>
+                  <h2 className="text-2xl mb-2 tracking-tighter">
+                    Quizzical
+                  </h2>
+                  <p className="p-2">
+                  A fun quiz app made with React and React Router.
+                  </p>
+                  <div className="flex">
+                    <p className="text-4xl">
+                      <BiLogoReact />
+                    </p>
+                    <p className="text-4xl">
+                      <BiLogoCss3 />
+                    </p>
+                    <p className="text-4xl">
+                      <TbApi />
+                    </p>
+                  </div>
+                </div>
+               )}
+            </div>
+            <div className="flex justify-between items-center mt-6">   
+              <div>
+                <a
+                  href=""
+                  className="bg-primary-color px-4 py-2 text-xl text-secondary-color rounded-lg mr-2 hover:bg-secondary-color hover:text-primary-color hover:border-2 hover:border-primary-color">
+                  Live
+                </a>
+                <a
+                  href=""
+                  className="bg-primary-color px-4 py-2 text-xl text-secondary-color rounded-lg hover:bg-secondary-color hover:text-primary-color hover:border-2 hover:border-primary-color">
+                  Repo
+                </a>
+              </div>
+              <div className="flex">
                 <p className="text-4xl">
                   <BiLogoReact />
                 </p>
                 <p className="text-4xl">
                   <BiLogoCss3 />
                 </p>
+                <p className="text-4xl">
+                  <TbApi />
+                </p>
               </div>
             </div>
-            <div>
-              <a
-                href=""
-                className="bg-primary-color px-4 py-2 text-xl text-secondary-color rounded-lg mr-2 hover:bg-secondary-color hover:text-primary-color hover:border-2 hover:border-primary-color"
-              >
-                Live
-              </a>
-              <a
-                href=""
-                className="bg-primary-color px-4 py-2 text-xl text-secondary-color rounded-lg hover:bg-secondary-color hover:text-primary-color hover:border-2 hover:border-primary-color"
-              >
-                Repo
-              </a>
-            </div>
           </div>
+          
         </div>
       </section>
     </>
