@@ -17,9 +17,16 @@ import { BiLogoFirebase } from "react-icons/bi";
 import project1 from "../images/project-1.png"
 import project2 from "../images/project-2.png"
 import project3 from "../images/project-3.png"
+import { useState } from "react";
 
 
 const Home = () => {
+    const [show, setShow] = useState(false)
+
+    const HandleClick = () => {
+        setShow(prevShow => !prevShow)
+    }
+
     return (
         <>
         <section className="mt-28">
@@ -62,7 +69,15 @@ const Home = () => {
             <h2 className="text-center text-5xl mb-32 tracking-tight">My Projects</h2>
             <div className="grid grid-cols-3 gap-8 place-items-center">
                 <div>
-                    <img src={project1} alt="todo app" className="w-80 h-80 object-cover rounded-3xl hover:shadow-lg hover:shadow-primary-color" />   
+                    <div className="relative group rounded-3xl">
+                    <img src={project1} alt="todo app" className="w-80 h-80 object-cover rounded-3xl cursor-pointer"
+                    onClick={HandleClick} 
+                    />
+                    {show && (
+                     <div className="absolute inset-0 flex items-center justify-center w-full h-full bg-primary-color text-secondary-color rounded-3xl cursor-pointer" onClick={HandleClick}>
+                        <p className="p-2">A Todo App consist of adding and deleting a todo, filtering todo in active or completed and dark/light mode.</p>
+                    </div>)} 
+                    </div>
                     <div className="flex justify-between mt-2">
                     <h2 className="text-2xl mb-2 tracking-tighter">Todo App</h2>
                     <div className="flex mb-4">
@@ -114,3 +129,5 @@ const Home = () => {
 }
 
 export default Home
+
+// inset-0 bg-opacity-50 opacity-0 group-hover:opacity-85 transition-opacity duration-5000 bg-primary-color p-2 text-white
