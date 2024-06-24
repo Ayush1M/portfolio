@@ -17,7 +17,11 @@ import { BiLogoFirebase } from "react-icons/bi";
 import project1 from "../images/project-1.png";
 import project2 from "../images/project-2.png";
 import project3 from "../images/project-3.png";
+import project4 from "../images/project-4.png"
+import project5 from "../images/project-5.png"
+import project6 from "../images/project-6.png"
 import { useState } from "react";
+
 
 const Home = () => {
   const [show, setShow] = useState(null);
@@ -109,7 +113,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="mt-40">
+      <section className="mt-40 mb-20">
         <h2 className="text-center text-5xl tracking-tight">
           My Projects
         </h2>
@@ -289,6 +293,177 @@ const Home = () => {
                 </p>
                 <p className="text-4xl">
                   <TbApi />
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div className="relative group rounded-3xl">
+              <img
+                src={project4}
+                alt="tic tac toe game"
+                className="w-80 h-80 object-cover rounded-3xl cursor-pointer hover:shadow-lg hover:shadow-primary-color"
+                onClick={() => HandleClick("image4")}
+              />
+              {show === "image4" && (
+                <div
+                  className="absolute inset-0 flex flex-col items-center justify-center w-full h-full bg-primary-color text-secondary-color rounded-3xl cursor-pointer"
+                  onClick={HandleClick}>
+                  <h2 className="text-2xl mb-2 tracking-tighter">
+                    Speed Typing
+                  </h2>
+                  <p className="p-2">
+                  A fun application to test how fast you can type in a given amount of time. It consists of a theme switcher too.
+                  </p>
+                  <div className="flex">
+                    <p className="text-4xl">
+                      <BiLogoReact />
+                    </p>
+                    <p className="text-4xl">
+                      <BiLogoCss3 />
+                    </p>
+                  </div>
+                </div>
+               )}
+            </div>
+            <div className="flex justify-between items-center mt-6">   
+              <div>
+                <a
+                  href=""
+                  className="bg-primary-color px-4 py-2 text-xl text-secondary-color rounded-lg mr-2 hover:bg-secondary-color hover:text-primary-color hover:border-2 hover:border-primary-color">
+                  Live
+                </a>
+                <a
+                  href=""
+                  className="bg-primary-color px-4 py-2 text-xl text-secondary-color rounded-lg hover:bg-secondary-color hover:text-primary-color hover:border-2 hover:border-primary-color">
+                  Repo
+                </a>
+              </div>
+              <div className="flex">
+                <p className="text-4xl">
+                  <BiLogoReact />
+                </p>
+                <p className="text-4xl">
+                  <BiLogoCss3 />
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div className="relative group rounded-3xl">
+              <img
+                src={project5}
+                alt="tic tac toe game"
+                className="w-80 h-80 object-cover rounded-3xl cursor-pointer hover:shadow-lg hover:shadow-primary-color"
+                onClick={() => HandleClick("image5")}
+              />
+              {show === "image5" && (
+                <div
+                  className="absolute inset-0 flex flex-col items-center justify-center w-full h-full bg-primary-color text-secondary-color rounded-3xl cursor-pointer"
+                  onClick={HandleClick}>
+                  <h2 className="text-2xl mb-2 tracking-tighter">
+                    Restaurant Ordering App
+                  </h2>
+                  <p className="p-2">
+                  Restaurant ordering app made with the concepts of JavaScript consist of adding and deleting items from the cart, cart functionality, payment container, and payment form.
+                  </p>
+                  <div className="flex">
+                    <p className="text-4xl">
+                      <BiLogoHtml5 />
+                    </p>
+                    <p className="text-4xl">
+                      <BiLogoCss3 />
+                    </p>
+                    <p className="text-4xl">
+                      <BiLogoJavascript />
+                    </p>
+                  </div>
+                </div>
+               )}
+            </div>
+            <div className="flex justify-between items-center mt-6">   
+              <div>
+                <a
+                  href=""
+                  className="bg-primary-color px-4 py-2 text-xl text-secondary-color rounded-lg mr-2 hover:bg-secondary-color hover:text-primary-color hover:border-2 hover:border-primary-color">
+                  Live
+                </a>
+                <a
+                  href=""
+                  className="bg-primary-color px-4 py-2 text-xl text-secondary-color rounded-lg hover:bg-secondary-color hover:text-primary-color hover:border-2 hover:border-primary-color">
+                  Repo
+                </a>
+              </div>
+              <div className="flex">
+                <p className="text-4xl">
+                  <BiLogoHtml5 />
+                </p>
+                <p className="text-4xl">
+                  <BiLogoCss3 />
+                </p>
+                <p className="text-4xl">
+                  <BiLogoJavascript />
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div className="relative group rounded-3xl">
+              <img
+                src={project6}
+                alt="tic tac toe game"
+                className="w-80 h-80 object-cover rounded-3xl cursor-pointer hover:shadow-lg hover:shadow-primary-color"
+                onClick={() => HandleClick("image6")}
+              />
+              {show === "image6" && (
+                <div
+                  className="absolute inset-0 flex flex-col items-center justify-center w-full h-full bg-primary-color text-secondary-color rounded-3xl cursor-pointer"
+                  onClick={HandleClick}>
+                  <h2 className="text-2xl mb-2 tracking-tighter">
+                    Color Scheme Generator
+                  </h2>
+                  <p className="p-2">
+                  Color scheme generator generates a color palette of a particular color of your choosing. You can also clip a particular color hex code to use it in your projects.
+                  </p>
+                  <div className="flex">
+                    <p className="text-4xl">
+                      <BiLogoHtml5 />
+                    </p>
+                    <p className="text-4xl">
+                      <BiLogoCss3 />
+                    </p>
+                    <p className="text-4xl">
+                      <BiLogoJavascript />
+                    </p>
+                  </div>
+                </div>
+               )}
+            </div>
+            <div className="flex justify-between items-center mt-6">   
+              <div>
+                <a
+                  href=""
+                  className="bg-primary-color px-4 py-2 text-xl text-secondary-color rounded-lg mr-2 hover:bg-secondary-color hover:text-primary-color hover:border-2 hover:border-primary-color">
+                  Live
+                </a>
+                <a
+                  href=""
+                  className="bg-primary-color px-4 py-2 text-xl text-secondary-color rounded-lg hover:bg-secondary-color hover:text-primary-color hover:border-2 hover:border-primary-color">
+                  Repo
+                </a>
+              </div>
+              <div className="flex">
+                <p className="text-4xl">
+                  <BiLogoHtml5 />
+                </p>
+                <p className="text-4xl">
+                  <BiLogoCss3 />
+                </p>
+                <p className="text-4xl">
+                  <BiLogoJavascript />
                 </p>
               </div>
             </div>
