@@ -110,9 +110,10 @@ const Home = () => {
       </section>
 
       <section className="mt-40">
-        <h2 className="text-center text-5xl mb-32 tracking-tight">
+        <h2 className="text-center text-5xl tracking-tight">
           My Projects
         </h2>
+        <p className="mb-24 mt-16 ml-4 text-lg text-orange-500">Click on the image to know more.</p>
 
         <div className="grid grid-cols-3 gap-8 place-items-center">
           <div>
