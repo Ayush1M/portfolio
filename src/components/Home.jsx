@@ -40,7 +40,7 @@ const Home = () => {
       <section className="mt-28">
         <div className="flex justify-evenly items-center">
           <div>
-            <h2 className="text-6xl mb-4 dark:text-secondary-color">Hey👋</h2>
+            <h2 className="text-6xl mb-4 dark:text-secondary-color">Hey<div className="inline-block animate-waving">👋</div></h2>
             <p className="text-6xl mb-6 dark:text-secondary-color">
               My name is <span className="text-orange-500">Ayush</span>
             </p>
