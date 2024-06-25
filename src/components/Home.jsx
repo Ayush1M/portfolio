@@ -24,11 +24,16 @@ import { useState } from "react";
 
 
 const Home = () => {
-  const [show, setShow] = useState(null);
+  const [show, setShow] = useState(null)
+  const [hover, setHover] = useState(null)
 
   const HandleClick = (imageId) => {
     setShow(show === imageId ? null : imageId);
   };
+
+  const onMouseEnter = (hoverId) => {
+    setHover(hoverId)
+  }
 
   return (
     <>
@@ -46,9 +51,27 @@ const Home = () => {
               Focusing on the accessiblity and responsive design.
             </p>
             <div className="flex items-center text-6xl mt-20">
-              <LiaLinkedinIn className="p-2 mr-16 rounded-full border-2 border-primary-color bg-primary-color text-secondary-color hover:text-primary-color hover:bg-secondary-color cursor-pointer" />
-              <FaGithub className="p-2 mr-16 rounded-full border-2 border-primary-color bg-primary-color text-secondary-color hover:text-primary-color hover:bg-secondary-color cursor-pointer" />
-              <MdEmail className="p-2 rounded-full border-2 border-primary-color bg-primary-color text-secondary-color hover:text-primary-color hover:bg-secondary-color cursor-pointer" />
+              <div className="relative">
+              {hover === "1" && <span className="bg-primary-color text-secondary-color text-base px-2 py-1 rounded-lg absolute top-20 right-12">Linkedin</span>}
+              <LiaLinkedinIn className="p-2 mr-16 rounded-full border-2 border-primary-color bg-primary-color text-secondary-color hover:text-primary-color hover:bg-secondary-color cursor-pointer" 
+              onMouseEnter={() => onMouseEnter("1")}
+              onMouseLeave={() => setHover(null)}/>
+              </div>
+              
+              <div className="relative">
+              {hover === "2" && <span className="bg-primary-color text-secondary-color text-base px-2 py-1 rounded-lg absolute top-20 right-16">Github</span>}
+              <FaGithub className="p-2 mr-16 rounded-full border-2 border-primary-color bg-primary-color text-secondary-color hover:text-primary-color hover:bg-secondary-color cursor-pointer" 
+              onMouseEnter={() => onMouseEnter("2")}
+              onMouseLeave={() => setHover(null)}/>
+              </div>
+
+              <div className="relative">
+              {hover === "3" && <span className="bg-primary-color text-secondary-color text-base px-2 py-1 rounded-lg absolute top-20 -right-16 w-44">copy email address</span>}
+              <MdEmail className="p-2 rounded-full border-2 border-primary-color bg-primary-color text-secondary-color hover:text-primary-color hover:bg-secondary-color cursor-pointer" 
+              onMouseEnter={() => onMouseEnter("3")}
+              onMouseLeave={() => setHover(null)}/>
+              </div>
+              
             </div>
           </div>
           <img
@@ -119,7 +142,7 @@ const Home = () => {
         </h2>
         <p className="mb-24 mt-16 ml-4 text-lg text-orange-500">Click on the image to know more.</p>
 
-        <div className="grid grid-cols-3 gap-8 place-items-center">
+        <div className="grid grid-cols-3 gap-16 place-items-center">
           <div>
             <div className="relative group rounded-3xl">
               <img
