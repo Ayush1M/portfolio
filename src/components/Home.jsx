@@ -493,6 +493,11 @@ const Home = () => {
           </div>
           
         </div>
+
+        <div className="text-center mt-40 text-3xl">
+          <p className="mb-6">Want to see more of my work?</p>
+          <a href="" className="bg-primary-color text-secondary-color py-3 text-xl rounded-lg flex justify-center items-center w-2/12 m-auto hover:bg-secondary-color hover:text-primary-color hover:border-2 hover:border-primary-color">Check my Github<BiLogoGithub className="text-2xl ml-1"/></a>
+        </div>
       </section>
     </>
   );
