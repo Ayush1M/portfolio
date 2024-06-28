@@ -6,6 +6,11 @@ export default {
   ],
   darkMode : "selector",
   theme: {
+    screens : {
+      "sm" : "425px",
+      "md" : "768px",
+      "lg" : "1024px",
+    },
     fontFamily : {
       'inconsolata' : ["Inconsolata", "monospace"]
     },

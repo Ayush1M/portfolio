@@ -38,8 +38,8 @@ const Home = () => {
   return (
     <>
       <section className="mt-28">
-        <div className="flex justify-evenly items-center">
-          <div>
+        <div className="flex justify-evenly items-center max-lg:flex max-lg:flex-col">
+          <div className="px-4 max-lg:mb-20 max-lg:flex max-lg:flex-col max-lg:items-center max-lg:text-center">
             <h2 className="text-6xl mb-4 dark:text-secondary-color">Hey<div className="inline-block animate-waving">👋</div></h2>
             <p className="text-6xl mb-6 dark:text-secondary-color">
               My name is <span className="text-orange-500">Ayush</span>
@@ -53,14 +53,14 @@ const Home = () => {
             <div className="flex items-center text-6xl mt-20">
               <div className="relative">
               {hover === "1" && <span className="bg-primary-color text-secondary-color text-base px-2 py-1 rounded-lg absolute top-20 right-12 dark:bg-secondary-color dark:text-primary-color">Linkedin</span>}
-              <LiaLinkedinIn className="p-2 mr-16 rounded-full border-2 border-primary-color bg-primary-color text-secondary-color hover:text-primary-color hover:bg-secondary-color cursor-pointer dark:bg-secondary-color dark:text-primary-color dark:hover:border-secondary-color dark:hover:bg-primary-color dark:hover:text-secondary-color" 
+              <LiaLinkedinIn className="p-2 mr-16 max-sm:mr-8 rounded-full border-2 border-primary-color bg-primary-color text-secondary-color hover:text-primary-color hover:bg-secondary-color cursor-pointer dark:bg-secondary-color dark:text-primary-color dark:hover:border-secondary-color dark:hover:bg-primary-color dark:hover:text-secondary-color" 
               onMouseEnter={() => onMouseEnter("1")}
               onMouseLeave={() => setHover(null)}/>
               </div>
               
               <div className="relative">
               {hover === "2" && <span className="bg-primary-color text-secondary-color text-base px-2 py-1 rounded-lg absolute top-20 right-16 dark:bg-secondary-color dark:text-primary-color">Github</span>}
-              <FaGithub className="p-2 mr-16 rounded-full border-2 border-primary-color bg-primary-color text-secondary-color hover:text-primary-color hover:bg-secondary-color cursor-pointer dark:bg-secondary-color dark:text-primary-color dark:hover:border-secondary-color dark:hover:bg-primary-color dark:hover:text-secondary-color" 
+              <FaGithub className="p-2 mr-16 max-sm:mr-8 rounded-full border-2 border-primary-color bg-primary-color text-secondary-color hover:text-primary-color hover:bg-secondary-color cursor-pointer dark:bg-secondary-color dark:text-primary-color dark:hover:border-secondary-color dark:hover:bg-primary-color dark:hover:text-secondary-color" 
               onMouseEnter={() => onMouseEnter("2")}
               onMouseLeave={() => setHover(null)}/>
               </div>
@@ -77,14 +77,14 @@ const Home = () => {
           <img
             src={myImage}
             alt="my image"
-            className="w-72 rounded-full border-2 border-primary-color shadow-lg shadow-primary-color dark:shadow-secondary-color"
+            className="w-72 max-lg:w-64 rounded-full border-2 border-primary-color shadow-lg shadow-primary-color dark:shadow-secondary-color"
           />
         </div>
       </section>
 
       <section className="mt-40 flex flex-col items-center">
         <h2 className="mb-16 text-5xl tracking-tight dark:text-secondary-color">My Skills</h2>
-        <div className="flex flex-wrap gap-10">
+        <div className="flex flex-wrap gap-12 px-4">
           <p className="text-xl flex flex-col items-center dark:text-secondary-color">
             <BiLogoHtml5 className="mb-4 text-6xl" />
             HTML
@@ -140,9 +140,9 @@ const Home = () => {
         <h2 className="text-center text-5xl tracking-tight dark:text-secondary-color">
           My Projects
         </h2>
-        <p className="mb-24 mt-16 ml-4 text-lg text-orange-500">Click on the image to know more.</p>
+        <p className="mb-24 mt-16 ml-4 text-lg text-orange-500 max-md:text-base">Click on the image to know more.</p>
 
-        <div className="grid grid-cols-3 gap-16 place-items-center">
+        <div className="grid grid-cols-3 gap-16 place-items-center px-4 max-lg:grid-cols-2 max-md:grid-cols-1">
           <div>
             <div className="relative group rounded-3xl">
               <img
@@ -177,23 +177,23 @@ const Home = () => {
               <div>
                 <a
                   href=""
-                  className="bg-primary-color px-4 py-2 text-xl text-secondary-color rounded-lg mr-2 hover:bg-secondary-color hover:text-primary-color hover:border-2 hover:border-primary-color dark:bg-secondary-color dark:text-primary-color dark:hover:border-secondary-color dark:hover:bg-primary-color dark:hover:text-secondary-color">
+                  className="bg-primary-color px-4 py-2 text-xl max-md:text-base text-secondary-color rounded-lg mr-2 hover:bg-secondary-color hover:text-primary-color hover:border-2 hover:border-primary-color dark:bg-secondary-color dark:text-primary-color dark:hover:border-secondary-color dark:hover:bg-primary-color dark:hover:text-secondary-color">
                   Live
                 </a>
                 <a
                   href=""
-                  className="bg-primary-color px-4 py-2 text-xl text-secondary-color rounded-lg hover:bg-secondary-color hover:text-primary-color hover:border-2 hover:border-primary-color dark:bg-secondary-color dark:text-primary-color dark:hover:border-secondary-color dark:hover:bg-primary-color dark:hover:text-secondary-color">
+                  className="bg-primary-color px-4 py-2 text-xl max-md:text-base text-secondary-color rounded-lg hover:bg-secondary-color hover:text-primary-color hover:border-2 hover:border-primary-color dark:bg-secondary-color dark:text-primary-color dark:hover:border-secondary-color dark:hover:bg-primary-color dark:hover:text-secondary-color">
                   Repo
                 </a>
               </div>
               <div className="flex dark:text-secondary-color">
-                <p className="text-4xl">
+                <p className="text-4xl max-lg:text-3xl">
                   <BiLogoReact />
                 </p>
-                <p className="text-4xl">
+                <p className="text-4xl max-lg:text-3xl">
                   <BiLogoTypescript />
                 </p>
-                <p className="text-4xl">
+                <p className="text-4xl max-lg:text-3xl">
                   <BiLogoTailwindCss />
                 </p>
               </div>
@@ -239,23 +239,23 @@ const Home = () => {
               <div>
                 <a
                   href=""
-                  className="bg-primary-color px-4 py-2 text-xl text-secondary-color rounded-lg mr-2 hover:bg-secondary-color hover:text-primary-color hover:border-2 hover:border-primary-color dark:bg-secondary-color dark:text-primary-color dark:hover:border-secondary-color dark:hover:bg-primary-color dark:hover:text-secondary-color">
+                  className="bg-primary-color px-4 py-2 text-xl max-md:text-base text-secondary-color rounded-lg mr-2 hover:bg-secondary-color hover:text-primary-color hover:border-2 hover:border-primary-color dark:bg-secondary-color dark:text-primary-color dark:hover:border-secondary-color dark:hover:bg-primary-color dark:hover:text-secondary-color">
                   Live
                 </a>
                 <a
                   href=""
-                  className="bg-primary-color px-4 py-2 text-xl text-secondary-color rounded-lg hover:bg-secondary-color hover:text-primary-color hover:border-2 hover:border-primary-color dark:bg-secondary-color dark:text-primary-color dark:hover:border-secondary-color dark:hover:bg-primary-color dark:hover:text-secondary-color">
+                  className="bg-primary-color px-4 py-2 text-xl max-md:text-base text-secondary-color rounded-lg hover:bg-secondary-color hover:text-primary-color hover:border-2 hover:border-primary-color dark:bg-secondary-color dark:text-primary-color dark:hover:border-secondary-color dark:hover:bg-primary-color dark:hover:text-secondary-color">
                   Repo
                 </a>
               </div>
               <div className="flex dark:text-secondary-color">
-                <p className="text-4xl">
+                <p className="text-4xl max-lg:text-3xl">
                   <BiLogoReact />
                 </p>
-                <p className="text-4xl">
+                <p className="text-4xl max-lg:text-3xl">
                   <BiLogoTypescript />
                 </p>
-                <p className="text-4xl">
+                <p className="text-4xl max-lg:text-3xl">
                   <BiLogoTailwindCss />
                 </p>
               </div>
@@ -298,23 +298,23 @@ const Home = () => {
               <div>
                 <a
                   href=""
-                  className="bg-primary-color px-4 py-2 text-xl text-secondary-color rounded-lg mr-2 hover:bg-secondary-color hover:text-primary-color hover:border-2 hover:border-primary-color dark:bg-secondary-color dark:text-primary-color dark:hover:border-secondary-color dark:hover:bg-primary-color dark:hover:text-secondary-color">
+                  className="bg-primary-color px-4 py-2 text-xl max-md:text-base text-secondary-color rounded-lg mr-2 hover:bg-secondary-color hover:text-primary-color hover:border-2 hover:border-primary-color dark:bg-secondary-color dark:text-primary-color dark:hover:border-secondary-color dark:hover:bg-primary-color dark:hover:text-secondary-color">
                   Live
                 </a>
                 <a
                   href=""
-                  className="bg-primary-color px-4 py-2 text-xl text-secondary-color rounded-lg hover:bg-secondary-color hover:text-primary-color hover:border-2 hover:border-primary-color dark:bg-secondary-color dark:text-primary-color dark:hover:border-secondary-color dark:hover:bg-primary-color dark:hover:text-secondary-color">
+                  className="bg-primary-color px-4 py-2 text-xl max-md:text-base text-secondary-color rounded-lg hover:bg-secondary-color hover:text-primary-color hover:border-2 hover:border-primary-color dark:bg-secondary-color dark:text-primary-color dark:hover:border-secondary-color dark:hover:bg-primary-color dark:hover:text-secondary-color">
                   Repo
                 </a>
               </div>
               <div className="flex dark:text-secondary-color">
-                <p className="text-4xl">
+                <p className="text-4xl max-lg:text-3xl">
                   <BiLogoReact />
                 </p>
-                <p className="text-4xl">
+                <p className="text-4xl max-lg:text-3xl">
                   <BiLogoCss3 />
                 </p>
-                <p className="text-4xl">
+                <p className="text-4xl max-lg:text-3xl">
                   <TbApi />
                 </p>
               </div>
@@ -354,20 +354,20 @@ const Home = () => {
               <div>
                 <a
                   href=""
-                  className="bg-primary-color px-4 py-2 text-xl text-secondary-color rounded-lg mr-2 hover:bg-secondary-color hover:text-primary-color hover:border-2 hover:border-primary-color dark:bg-secondary-color dark:text-primary-color dark:hover:border-secondary-color dark:hover:bg-primary-color dark:hover:text-secondary-color">
+                  className="bg-primary-color px-4 py-2 text-xl max-md:text-base text-secondary-color rounded-lg mr-2 hover:bg-secondary-color hover:text-primary-color hover:border-2 hover:border-primary-color dark:bg-secondary-color dark:text-primary-color dark:hover:border-secondary-color dark:hover:bg-primary-color dark:hover:text-secondary-color">
                   Live
                 </a>
                 <a
                   href=""
-                  className="bg-primary-color px-4 py-2 text-xl text-secondary-color rounded-lg hover:bg-secondary-color hover:text-primary-color hover:border-2 hover:border-primary-color dark:bg-secondary-color dark:text-primary-color dark:hover:border-secondary-color dark:hover:bg-primary-color dark:hover:text-secondary-color">
+                  className="bg-primary-color px-4 py-2 text-xl max-md:text-base text-secondary-color rounded-lg hover:bg-secondary-color hover:text-primary-color hover:border-2 hover:border-primary-color dark:bg-secondary-color dark:text-primary-color dark:hover:border-secondary-color dark:hover:bg-primary-color dark:hover:text-secondary-color">
                   Repo
                 </a>
               </div>
               <div className="flex dark:text-secondary-color">
-                <p className="text-4xl">
+                <p className="text-4xl max-lg:text-3xl">
                   <BiLogoReact />
                 </p>
-                <p className="text-4xl">
+                <p className="text-4xl max-lg:text-3xl">
                   <BiLogoCss3 />
                 </p>
               </div>
@@ -410,23 +410,23 @@ const Home = () => {
               <div>
                 <a
                   href=""
-                  className="bg-primary-color px-4 py-2 text-xl text-secondary-color rounded-lg mr-2 hover:bg-secondary-color hover:text-primary-color hover:border-2 hover:border-primary-color dark:bg-secondary-color dark:text-primary-color dark:hover:border-secondary-color dark:hover:bg-primary-color dark:hover:text-secondary-color">
+                  className="bg-primary-color px-4 py-2 text-xl max-md:text-base text-secondary-color rounded-lg mr-2 hover:bg-secondary-color hover:text-primary-color hover:border-2 hover:border-primary-color dark:bg-secondary-color dark:text-primary-color dark:hover:border-secondary-color dark:hover:bg-primary-color dark:hover:text-secondary-color">
                   Live
                 </a>
                 <a
                   href=""
-                  className="bg-primary-color px-4 py-2 text-xl text-secondary-color rounded-lg hover:bg-secondary-color hover:text-primary-color hover:border-2 hover:border-primary-color dark:bg-secondary-color dark:text-primary-color dark:hover:border-secondary-color dark:hover:bg-primary-color dark:hover:text-secondary-color">
+                  className="bg-primary-color px-4 py-2 text-xl max-md:text-base text-secondary-color rounded-lg hover:bg-secondary-color hover:text-primary-color hover:border-2 hover:border-primary-color dark:bg-secondary-color dark:text-primary-color dark:hover:border-secondary-color dark:hover:bg-primary-color dark:hover:text-secondary-color">
                   Repo
                 </a>
               </div>
               <div className="flex dark:text-secondary-color">
-                <p className="text-4xl">
+                <p className="text-4xl max-lg:text-3xl">
                   <BiLogoHtml5 />
                 </p>
-                <p className="text-4xl">
+                <p className="text-4xl max-lg:text-3xl">
                   <BiLogoCss3 />
                 </p>
-                <p className="text-4xl">
+                <p className="text-4xl max-lg:text-3xl">
                   <BiLogoJavascript />
                 </p>
               </div>
@@ -469,23 +469,23 @@ const Home = () => {
               <div>
                 <a
                   href=""
-                  className="bg-primary-color px-4 py-2 text-xl text-secondary-color rounded-lg mr-2 hover:bg-secondary-color hover:text-primary-color hover:border-2 hover:border-primary-color dark:bg-secondary-color dark:text-primary-color dark:hover:border-secondary-color dark:hover:bg-primary-color dark:hover:text-secondary-color">
+                  className="bg-primary-color px-4 py-2 text-xl max-md:text-base text-secondary-color rounded-lg mr-2 hover:bg-secondary-color hover:text-primary-color hover:border-2 hover:border-primary-color dark:bg-secondary-color dark:text-primary-color dark:hover:border-secondary-color dark:hover:bg-primary-color dark:hover:text-secondary-color">
                   Live
                 </a>
                 <a
                   href=""
-                  className="bg-primary-color px-4 py-2 text-xl text-secondary-color rounded-lg hover:bg-secondary-color hover:text-primary-color hover:border-2 hover:border-primary-color dark:bg-secondary-color dark:text-primary-color dark:hover:border-secondary-color dark:hover:bg-primary-color dark:hover:text-secondary-color">
+                  className="bg-primary-color px-4 py-2 text-xl max-md:text-base text-secondary-color rounded-lg hover:bg-secondary-color hover:text-primary-color hover:border-2 hover:border-primary-color dark:bg-secondary-color dark:text-primary-color dark:hover:border-secondary-color dark:hover:bg-primary-color dark:hover:text-secondary-color">
                   Repo
                 </a>
               </div>
               <div className="flex dark:text-secondary-color">
-                <p className="text-4xl">
+                <p className="text-4xl max-lg:text-3xl">
                   <BiLogoHtml5 />
                 </p>
-                <p className="text-4xl">
+                <p className="text-4xl max-lg:text-3xl">
                   <BiLogoCss3 />
                 </p>
-                <p className="text-4xl">
+                <p className="text-4xl max-lg:text-3xl">
                   <BiLogoJavascript />
                 </p>
               </div>
@@ -495,8 +495,8 @@ const Home = () => {
         </div>
 
         <div className="text-center mt-40 text-3xl">
-          <p className="mb-6 dark:text-secondary-color">Want to see more of my work?</p>
-          <a href="" className="bg-primary-color text-secondary-color py-3 text-xl rounded-lg flex justify-center items-center w-2/12 m-auto hover:bg-secondary-color hover:text-primary-color hover:border-2 hover:border-primary-color dark:bg-secondary-color dark:text-primary-color dark:hover:border-secondary-color dark:hover:bg-primary-color dark:hover:text-secondary-color">
+          <p className="mb-6 px-2 dark:text-secondary-color">Want to see more of my work?</p>
+          <a href="" className="bg-primary-color text-secondary-color p-3 text-xl rounded-lg flex justify-center items-center max-w-max m-auto hover:bg-secondary-color hover:text-primary-color hover:border-2 hover:border-primary-color dark:bg-secondary-color dark:text-primary-color dark:hover:border-secondary-color dark:hover:bg-primary-color dark:hover:text-secondary-color">
           Check my Github<BiLogoGithub className="text-2xl ml-1"/>
           </a>
         </div>
