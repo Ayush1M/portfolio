@@ -59,16 +59,24 @@ const Home = () => {
             <div className="flex items-center text-6xl mt-20">
               <div className="relative">
               {hover === "1" && <span className="bg-primary-color text-secondary-color text-base px-2 py-1 rounded-lg absolute top-20 right-12 dark:bg-secondary-color dark:text-primary-color">Linkedin</span>}
+              <a href="https://www.linkedin.com/in/ayush-mahajan10"
+              target="_blank"
+              rel="noopener noreferrer">
               <LiaLinkedinIn className="p-2 mr-16 max-sm:mr-8 rounded-full border-2 border-primary-color bg-primary-color text-secondary-color hover:text-primary-color hover:bg-secondary-color cursor-pointer dark:bg-secondary-color dark:text-primary-color dark:hover:border-secondary-color dark:hover:bg-primary-color dark:hover:text-secondary-color" 
               onMouseEnter={() => onMouseEnter("1")}
               onMouseLeave={() => setHover(null)}/>
+              </a>
               </div>
               
               <div className="relative">
               {hover === "2" && <span className="bg-primary-color text-secondary-color text-base px-2 py-1 rounded-lg absolute top-20 right-16 dark:bg-secondary-color dark:text-primary-color">Github</span>}
+              <a href="https://github.com/Ayush1M" 
+              target="_blank"
+              rel="noopener noreferrer">
               <FaGithub className="p-2 mr-16 max-sm:mr-8 rounded-full border-2 border-primary-color bg-primary-color text-secondary-color hover:text-primary-color hover:bg-secondary-color cursor-pointer dark:bg-secondary-color dark:text-primary-color dark:hover:border-secondary-color dark:hover:bg-primary-color dark:hover:text-secondary-color" 
               onMouseEnter={() => onMouseEnter("2")}
               onMouseLeave={() => setHover(null)}/>
+              </a>
               </div>
 
               <div className="relative">
@@ -183,12 +191,16 @@ const Home = () => {
             <div className="flex justify-between items-center mt-6">
               <div>
                 <a
-                  href=""
+                  href="https://ayush-todo-app.netlify.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="bg-primary-color px-4 py-2 text-xl max-md:text-base text-secondary-color rounded-lg mr-2 hover:bg-secondary-color hover:text-primary-color hover:border-2 hover:border-primary-color dark:bg-secondary-color dark:text-primary-color dark:hover:border-secondary-color dark:hover:bg-primary-color dark:hover:text-secondary-color">
                   Live
                 </a>
                 <a
-                  href=""
+                  href="https://github.com/Ayush1M/Todo-App"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="bg-primary-color px-4 py-2 text-xl max-md:text-base text-secondary-color rounded-lg hover:bg-secondary-color hover:text-primary-color hover:border-2 hover:border-primary-color dark:bg-secondary-color dark:text-primary-color dark:hover:border-secondary-color dark:hover:bg-primary-color dark:hover:text-secondary-color">
                   Repo
                 </a>
@@ -245,12 +257,16 @@ const Home = () => {
             <div className="flex justify-between items-center mt-6">   
               <div>
                 <a
-                  href=""
+                  href="https://tic-tac-toe-game-am.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="bg-primary-color px-4 py-2 text-xl max-md:text-base text-secondary-color rounded-lg mr-2 hover:bg-secondary-color hover:text-primary-color hover:border-2 hover:border-primary-color dark:bg-secondary-color dark:text-primary-color dark:hover:border-secondary-color dark:hover:bg-primary-color dark:hover:text-secondary-color">
                   Live
                 </a>
                 <a
-                  href=""
+                  href="https://github.com/Ayush1M/tic-tac-toe-game"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="bg-primary-color px-4 py-2 text-xl max-md:text-base text-secondary-color rounded-lg hover:bg-secondary-color hover:text-primary-color hover:border-2 hover:border-primary-color dark:bg-secondary-color dark:text-primary-color dark:hover:border-secondary-color dark:hover:bg-primary-color dark:hover:text-secondary-color">
                   Repo
                 </a>
@@ -304,12 +320,16 @@ const Home = () => {
             <div className="flex justify-between items-center mt-6">   
               <div>
                 <a
-                  href=""
+                  href="https://quizzical-ayush.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="bg-primary-color px-4 py-2 text-xl max-md:text-base text-secondary-color rounded-lg mr-2 hover:bg-secondary-color hover:text-primary-color hover:border-2 hover:border-primary-color dark:bg-secondary-color dark:text-primary-color dark:hover:border-secondary-color dark:hover:bg-primary-color dark:hover:text-secondary-color">
                   Live
                 </a>
                 <a
-                  href=""
+                  href="https://github.com/Ayush1M/Quizzical"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="bg-primary-color px-4 py-2 text-xl max-md:text-base text-secondary-color rounded-lg hover:bg-secondary-color hover:text-primary-color hover:border-2 hover:border-primary-color dark:bg-secondary-color dark:text-primary-color dark:hover:border-secondary-color dark:hover:bg-primary-color dark:hover:text-secondary-color">
                   Repo
                 </a>
@@ -360,12 +380,16 @@ const Home = () => {
             <div className="flex justify-between items-center mt-6">   
               <div>
                 <a
-                  href=""
+                  href="https://speed-typing-game-am.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="bg-primary-color px-4 py-2 text-xl max-md:text-base text-secondary-color rounded-lg mr-2 hover:bg-secondary-color hover:text-primary-color hover:border-2 hover:border-primary-color dark:bg-secondary-color dark:text-primary-color dark:hover:border-secondary-color dark:hover:bg-primary-color dark:hover:text-secondary-color">
                   Live
                 </a>
                 <a
-                  href=""
+                  href="https://github.com/Ayush1M/Speed-Typing-Game"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="bg-primary-color px-4 py-2 text-xl max-md:text-base text-secondary-color rounded-lg hover:bg-secondary-color hover:text-primary-color hover:border-2 hover:border-primary-color dark:bg-secondary-color dark:text-primary-color dark:hover:border-secondary-color dark:hover:bg-primary-color dark:hover:text-secondary-color">
                   Repo
                 </a>
@@ -416,12 +440,16 @@ const Home = () => {
             <div className="flex justify-between items-center mt-6">   
               <div>
                 <a
-                  href=""
+                  href="https://ayushm-restaurant-ordering-app.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="bg-primary-color px-4 py-2 text-xl max-md:text-base text-secondary-color rounded-lg mr-2 hover:bg-secondary-color hover:text-primary-color hover:border-2 hover:border-primary-color dark:bg-secondary-color dark:text-primary-color dark:hover:border-secondary-color dark:hover:bg-primary-color dark:hover:text-secondary-color">
                   Live
                 </a>
                 <a
-                  href=""
+                  href="https://github.com/Ayush1M/Restaurant-ordering-app"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="bg-primary-color px-4 py-2 text-xl max-md:text-base text-secondary-color rounded-lg hover:bg-secondary-color hover:text-primary-color hover:border-2 hover:border-primary-color dark:bg-secondary-color dark:text-primary-color dark:hover:border-secondary-color dark:hover:bg-primary-color dark:hover:text-secondary-color">
                   Repo
                 </a>
@@ -475,12 +503,16 @@ const Home = () => {
             <div className="flex justify-between items-center mt-6">   
               <div>
                 <a
-                  href=""
+                  href="https://ayush-color-scheme-generator.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="bg-primary-color px-4 py-2 text-xl max-md:text-base text-secondary-color rounded-lg mr-2 hover:bg-secondary-color hover:text-primary-color hover:border-2 hover:border-primary-color dark:bg-secondary-color dark:text-primary-color dark:hover:border-secondary-color dark:hover:bg-primary-color dark:hover:text-secondary-color">
                   Live
                 </a>
                 <a
-                  href=""
+                  href="https://github.com/Ayush1M/color-scheme-generator"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="bg-primary-color px-4 py-2 text-xl max-md:text-base text-secondary-color rounded-lg hover:bg-secondary-color hover:text-primary-color hover:border-2 hover:border-primary-color dark:bg-secondary-color dark:text-primary-color dark:hover:border-secondary-color dark:hover:bg-primary-color dark:hover:text-secondary-color">
                   Repo
                 </a>
@@ -503,7 +535,10 @@ const Home = () => {
 
         <div className="text-center mt-40 text-3xl">
           <p className="mb-6 px-2 dark:text-secondary-color">Want to see more of my work?</p>
-          <a href="" className="bg-primary-color text-secondary-color p-3 text-xl rounded-lg flex justify-center items-center max-w-max m-auto hover:bg-secondary-color hover:text-primary-color hover:border-2 hover:border-primary-color dark:bg-secondary-color dark:text-primary-color dark:hover:border-secondary-color dark:hover:bg-primary-color dark:hover:text-secondary-color">
+          <a href="https://github.com/Ayush1M"
+          className="bg-primary-color text-secondary-color p-3 text-xl rounded-lg flex justify-center items-center max-w-max m-auto hover:bg-secondary-color hover:text-primary-color hover:border-2 hover:border-primary-color dark:bg-secondary-color dark:text-primary-color dark:hover:border-secondary-color dark:hover:bg-primary-color dark:hover:text-secondary-color"
+          target="_blank"
+          rel="noopener noreferrer">
           Check my Github<BiLogoGithub className="text-2xl ml-1"/>
           </a>
         </div>
