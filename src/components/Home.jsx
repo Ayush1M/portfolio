@@ -26,6 +26,7 @@ import { useState } from "react";
 const Home = () => {
   const [show, setShow] = useState(null)
   const [hover, setHover] = useState(null)
+  const [copyText, setCopyText] = useState("ayush.97mahajan@gmail.com")
 
   const HandleClick = (imageId) => {
     setShow(show === imageId ? null : imageId);
@@ -33,6 +34,11 @@ const Home = () => {
 
   const onMouseEnter = (hoverId) => {
     setHover(hoverId)
+  }
+
+  const save = () => {
+    setCopyText(copyText)
+    navigator.clipboard.writeText(copyText)
   }
 
   return (
@@ -69,7 +75,8 @@ const Home = () => {
               {hover === "3" && <span className="bg-primary-color text-secondary-color text-base px-2 py-1 rounded-lg absolute top-20 -right-16 w-44 dark:bg-secondary-color dark:text-primary-color">copy email address</span>}
               <MdEmail className="p-2 rounded-full border-2 border-primary-color bg-primary-color text-secondary-color hover:text-primary-color hover:bg-secondary-color cursor-pointer dark:bg-secondary-color dark:text-primary-color dark:hover:border-secondary-color dark:hover:bg-primary-color dark:hover:text-secondary-color" 
               onMouseEnter={() => onMouseEnter("3")}
-              onMouseLeave={() => setHover(null)}/>
+              onMouseLeave={() => setHover(null)}
+              onClick={save}/>
               </div>
               
             </div>
