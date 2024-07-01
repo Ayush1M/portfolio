@@ -171,8 +171,8 @@ const Home = () => {
                   onClick={HandleClick}>
                   <h2 className="text-2xl mb-2 tracking-tighter">Todo App</h2>
                   <p className="p-2">
-                    A Todo App consist of adding and deleting a todo, filtering
-                    todo in active or completed and dark/light mode.
+                    A Todo App consist of adding and deleting a todo, editing a todo, filtering
+                    todo if active or completed and dark/light mode.
                   </p>
                   <div className="flex">
                     <p className="text-4xl">
