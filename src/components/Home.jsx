@@ -290,7 +290,7 @@ const Home = () => {
               <img
                 src={project3}
                 alt="tic tac toe game"
-                className="w-80 h-80 object-cover rounded-3xl cursor-pointer hover:shadow-lg hover:shadow-primary-color"
+                className="w-80 h-80 object-contain border-2 rounded-3xl cursor-pointer hover:shadow-lg hover:shadow-primary-color"
                 onClick={() => HandleClick("image3")}
               />
               {show === "image3" && (
@@ -298,20 +298,20 @@ const Home = () => {
                   className="absolute inset-0 flex flex-col items-center justify-center w-full h-full bg-primary-color text-secondary-color rounded-3xl cursor-pointer dark:bg-secondary-color dark:text-primary-color"
                   onClick={HandleClick}>
                   <h2 className="text-2xl mb-2 tracking-tighter">
-                    Quizzical
+                    Task Managment App
                   </h2>
                   <p className="p-2">
-                  A fun quiz app made with React and React Router.
+                  A simple version of a Task Management app where you can add a task or delete a task, add goals for a task e.g if you learning something new, set due dates to manage time.
                   </p>
                   <div className="flex">
                     <p className="text-4xl">
                       <BiLogoReact />
                     </p>
                     <p className="text-4xl">
-                      <BiLogoCss3 />
+                      <BiLogoTypescript />
                     </p>
                     <p className="text-4xl">
-                      <TbApi />
+                      <BiLogoTailwindCss />
                     </p>
                   </div>
                 </div>
@@ -320,14 +320,14 @@ const Home = () => {
             <div className="flex justify-between items-center mt-6">   
               <div>
                 <a
-                  href="https://quizzical-ayush.netlify.app/"
+                  href="https://task-management-app-ayush.netlify.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-primary-color px-4 py-2 text-xl max-md:text-base text-secondary-color rounded-lg mr-2 hover:bg-secondary-color hover:text-primary-color hover:border-2 hover:border-primary-color dark:bg-secondary-color dark:text-primary-color dark:hover:border-secondary-color dark:hover:bg-primary-color dark:hover:text-secondary-color">
                   Live
                 </a>
                 <a
-                  href="https://github.com/Ayush1M/Quizzical"
+                  href="https://github.com/Ayush1M/Task-Management-App"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-primary-color px-4 py-2 text-xl max-md:text-base text-secondary-color rounded-lg hover:bg-secondary-color hover:text-primary-color hover:border-2 hover:border-primary-color dark:bg-secondary-color dark:text-primary-color dark:hover:border-secondary-color dark:hover:bg-primary-color dark:hover:text-secondary-color">
@@ -339,10 +339,10 @@ const Home = () => {
                   <BiLogoReact />
                 </p>
                 <p className="text-4xl max-lg:text-3xl">
-                  <BiLogoCss3 />
+                  <BiLogoTypescript />  
                 </p>
                 <p className="text-4xl max-lg:text-3xl">
-                  <TbApi />
+                  <BiLogoTailwindCss />
                 </p>
               </div>
             </div>
