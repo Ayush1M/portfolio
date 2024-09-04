@@ -435,6 +435,9 @@ const Home = () => {
                     <p className="text-4xl">
                       <BiLogoJavascript />
                     </p>
+                    <p className="text-4xl">
+                      <TbApi />
+                    </p>
                   </div>
                 </div>
                )}
@@ -465,6 +468,9 @@ const Home = () => {
                 </p>
                 <p className="text-4xl max-lg:text-3xl">
                   <BiLogoJavascript />
+                </p>
+                <p className="text-4xl max-lg:text-3xl">
+                  <TbApi />
                 </p>
               </div>
             </div>
