@@ -2,18 +2,8 @@ import myImage from "../assets/my-image.jpg";
 import { LiaLinkedinIn } from "react-icons/lia";
 import { FaGithub } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
-import { BiLogoHtml5 } from "react-icons/bi";
-import { BiLogoCss3 } from "react-icons/bi";
-import { BiLogoJavascript } from "react-icons/bi";
-import { BiLogoTypescript } from "react-icons/bi";
-import { BiLogoReact } from "react-icons/bi";
-import { BiLogoTailwindCss } from "react-icons/bi";
+import { BiLogoHtml5 ,BiLogoCss3 ,BiLogoJavascript,BiLogoTypescript ,BiLogoReact ,BiLogoTailwindCss ,BiLogoGithub } from "react-icons/bi";
 import { TbApi } from "react-icons/tb";
-import { BiLogoGit } from "react-icons/bi";
-import { BiLogoGithub } from "react-icons/bi";
-import { BiLogoFigma } from "react-icons/bi";
-import { BiLogoVisualStudio } from "react-icons/bi";
-import { BiLogoFirebase } from "react-icons/bi";
 import project1 from "../images/project-1.png";
 import project2 from "../images/project-2.png";
 import project3 from "../images/project-3.png";
@@ -21,6 +11,7 @@ import project4 from "../images/project-4.png"
 import project5 from "../images/project-5.png"
 import project6 from "../images/project-6.png"
 import { useState } from "react";
+import Skills from "./Skills";
 
 
 const Home = () => {
@@ -97,59 +88,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="mt-40 flex flex-col items-center">
-        <h2 className="mb-16 text-5xl tracking-tight dark:text-secondary-color">My Skills</h2>
-        <div className="flex flex-wrap gap-12 px-4">
-          <p className="text-xl flex flex-col items-center dark:text-secondary-color">
-            <BiLogoHtml5 className="mb-4 text-6xl" />
-            HTML
-          </p>
-          <p className="text-xl flex flex-col items-center dark:text-secondary-color">
-            <BiLogoCss3 className="mb-4 text-6xl" />
-            CSS
-          </p>
-          <p className="text-xl flex flex-col items-center dark:text-secondary-color">
-            <BiLogoJavascript className="mb-4 text-6xl" />
-            JavaScript
-          </p>
-          <p className="text-xl flex flex-col items-center dark:text-secondary-color">
-            <BiLogoTypescript className="mb-4 text-6xl" />
-            TypeScript
-          </p>
-          <p className="text-xl flex flex-col items-center dark:text-secondary-color">
-            <BiLogoReact className="mb-4 text-6xl" />
-            React
-          </p>
-          <p className="text-xl flex flex-col items-center dark:text-secondary-color">
-            <BiLogoTailwindCss className="mb-4 text-6xl" />
-            Tailwind CSS
-          </p>
-          <p className="text-xl flex flex-col items-center dark:text-secondary-color">
-            <TbApi className="mb-4 text-6xl" />
-            Api
-          </p>
-          <p className="text-xl flex flex-col items-center dark:text-secondary-color">
-            <BiLogoGit className="mb-4 text-6xl" />
-            Git
-          </p>
-          <p className="text-xl flex flex-col items-center dark:text-secondary-color">
-            <BiLogoGithub className="mb-4 text-6xl" />
-            Github
-          </p>
-          <p className="text-xl flex flex-col items-center dark:text-secondary-color">
-            <BiLogoFigma className="mb-4 text-6xl" />
-            Figma
-          </p>
-          <p className="text-xl flex flex-col items-center dark:text-secondary-color">
-            <BiLogoVisualStudio className="mb-4 text-6xl" />
-            VSCode
-          </p>
-          <p className="text-xl flex flex-col items-center dark:text-secondary-color">
-            <BiLogoFirebase className="mb-4 text-6xl" />
-            Firebase
-          </p>
-        </div>
-      </section>
+      <Skills />
 
       <section className="mt-40 py-20">
         <h2 className="text-center text-5xl tracking-tight dark:text-secondary-color">
