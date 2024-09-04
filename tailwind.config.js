@@ -8,8 +8,14 @@ export default {
   theme: {
     screens : {
       "sm" : "425px",
+      "sm3" : "470px",
+      "sm2" : "570px",
+      "sm1" : "670px",
       "md" : "768px",
+      "md1" : "800px",
+      "md2" : "920px",
       "lg" : "1024px",
+      "l" : "1280px"
     },
     fontFamily : {
       'inconsolata' : ["Inconsolata", "monospace"]

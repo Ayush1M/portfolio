@@ -15,7 +15,7 @@ const Skills = () => {
     return(
         <section className="mt-40 flex flex-col items-center">
         <h2 className="mb-16 text-5xl tracking-tight dark:text-secondary-color">My Skills</h2>
-        <div className="flex flex-wrap gap-12 px-4">
+        <div className="grid grid-cols-11 gap-8 px-4 max-l:grid-cols-9 max-lg:grid-cols-8 max-md2:grid-cols-7 max-md1:grid-cols-6 max-sm1:grid-cols-5 max-sm2:grid-cols-4 max-sm3:grid-cols-3">
           <p className="text-xl flex flex-col items-center dark:text-secondary-color">
             <BiLogoHtml5 className="mb-4 text-6xl" />
             HTML
@@ -36,7 +36,7 @@ const Skills = () => {
             <BiLogoReact className="mb-4 text-6xl" />
             React
           </p>
-          <p className="text-xl flex flex-col items-center dark:text-secondary-color">
+          <p className="flex flex-col items-center dark:text-secondary-color">
             <BiLogoTailwindCss className="mb-4 text-6xl" />
             Tailwind CSS
           </p>
